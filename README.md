@@ -1,6 +1,7 @@
 # 3-Largest-Elements-Array
 
 WHOLE PROCESS:
+
 		third = second -> 0
 		second = first -> 0
 		first = arr[i] -> 112
