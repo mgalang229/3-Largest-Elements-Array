@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	
+	int arr[] = {112,434,765,16,578};
+	int first, second, third;
+	first = second = third = 0;
+	
+	for(int i = 0; i < 5; i++){
+		if(arr[i] > first){
+			third = second;
+			second = first;
+			first = arr[i];
+		} else if(arr[i] > second){
+			third = second;
+			second = arr[i];
+		} else if(arr[i] > third){
+			third = arr[i];
+		}
+	}
+	
+	cout << first << " " << second << " " << third;
+	
+	return 0;
+	
+}
